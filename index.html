@@ -1,14 +1,106 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Kugo</title>
 </head>
 <body>
-    
-    <script src="js/main.js"></script>
+  <div class="container">
+    <nav class="navbar">
+      <ul class="header-nav">
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Сервис</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Сотрудничество</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Заказать звонок</a>
+        </li>
+        <li class="header-nav-item">
+          <div class="header-socials">
+            <a href="#" class="header-socials-link">
+              <svg height="12px" width="12px">
+                <use href="./img/sprite.svg#viber"></use>
+              </svg>
+            </a>
+  
+            <a href="#" class="header-socials-link">
+              <svg height="12px" width="12px">
+                <use href="./img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a>
+  
+            <a href="#" class="header-socials-link">
+              <svg height="12px" width="12px">
+                <use href="./img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <a href="tel:+78005055461" class="header-phone">+7 (800) 505-54-61</a>
+    </nav>
+  </div>
+    <div class="header-separator"></div>
+
+  <div class="container">
+    <header class="header">
+      <div class="header-logo">Kugoo</div>
+
+      <button class="button header-button">
+        <div class="header-button-lines">
+          <div class="header-button-line"></div>
+          <div class="header-button-line"></div>
+          <div class="header-button-line"></div>
+        </div>
+        Каталог
+      </button>
+
+      <div class="header-controls">
+        <input type="text" class="header-input" placeholder="Искать самокат KUGO">
+        <button class="button button-search">
+          <svg width="16" height="16">
+            <use href="./img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="header-links">
+        <li class="header-links-item">
+          <a href="#" class="header-link">
+            <img src="./img/balance.svg" alt="balance">
+          </a>
+        </li>
+
+        <li class="header-links-item">
+          <a href="#" class="header-link">
+            <svg width="20" height="20">
+              <use href="./img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="header-links-item">
+          <a href="#" class="header-link">
+            <svg width="20" height="20">
+              <use href="./img/sprite.svg#cart"></use>
+            </svg>
+            Корзина
+          </a>
+        </li>
+      </ul>
+    </header>
+  </div>
+  
+
+
+
+
+
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
