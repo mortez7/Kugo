@@ -158,10 +158,6 @@ body {
   gap: 1.5625rem;
 }
 
-.header-links-item {
-  
-}
-
 .header-link {
   text-decoration: none;
   color: #282739;
@@ -171,4 +167,114 @@ body {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+}
+
+.banner {
+  margin-top: 2.5rem;
+  padding: 0 1.875rem;
+}
+
+.no-webp .banner-image {
+  background-image: url("../img/woman-riding-scooter.jpg");
+}
+
+.banner-image {
+  background-image: url("../img/woman-riding-scooter.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.banner-content {
+  background: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%);
+  padding: 3.5rem 8.5rem;
+  color: #FFF;
+}
+
+.banner-schedule {
+  display: flex;
+  align-items: center;
+}
+
+.banner-address {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 141%;
+  margin-left: 0.5rem;
+  margin-right: 0.625rem;
+}
+
+.banner-time {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 141%;
+}
+
+.banner-title {
+  font-weight: 600;
+  font-size: 2.1875rem;
+  line-height: 142%;
+  text-transform: uppercase;
+  max-width: 38.25rem;
+  margin-top: 1.1875rem;
+  margin-bottom: 0.4375rem;
+}
+
+.banner-text {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 145%;
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+}
+
+.banner-features {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2.1875rem;
+  padding: 0;
+  margin-bottom: 2.375rem;
+}
+
+.banner-features-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.banner-features-item-icon {
+  background: rgb(141, 145, 241);
+  padding: 0.75rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-features-item-text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 128%;
+  max-width: 143px;
+  margin: 0;
+}
+
+.button-light {
+  border-radius: 5px;
+  background-color: #FFF;
+  color: #6F73EE;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 143%;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-button {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
