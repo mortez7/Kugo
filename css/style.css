@@ -278,3 +278,89 @@ body {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+
+.section {
+}
+.test-drive {
+  margin-top: 4.5rem;
+  margin-bottom: 6.25rem;
+  padding-left: 10.3125rem;
+  padding-right: 1.875rem;
+  display: flex;
+  gap: 5.3125rem;
+}
+
+.section-wrapper {
+  padding-top: 1.75rem;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 143%;
+  margin: 0;
+}
+
+.test-drive-title {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+}
+
+.section-content {
+}
+
+.section-list-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 115%;
+  margin-top: 0;
+  margin-bottom: 1.125rem;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 144%;
+}
+
+.section-list-icon {
+  margin-right: 0.625rem;
+}
+
+.test-drive-image {
+  border-radius: 10px;
+  height: 26.375rem;
+  width: 32.1875rem;
+  object-fit: cover;
+}
+
+.education {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  display: flex;
+  gap: 5.9375rem;
+  padding-left: 1.875rem;
+  padding-right: 5.5rem;
+}
+
+.education-image {
+  border-radius: 10px;
+  height: 28.9375rem;
+  width: 32.1875rem;
+  object-fit: cover;
+}
+
+.education-title {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+}
