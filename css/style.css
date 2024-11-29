@@ -364,3 +364,234 @@ body {
   margin-top: 0;
   margin-bottom: 1.875rem;
 }
+
+.models-title {
+  max-width: 45.75rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3.125rem;
+}
+
+.models-wrapper {
+  display: flex;
+  padding-left: 10.375rem;
+  padding-right: 10.375rem;
+  gap: 1.875rem;
+}
+.model-card {
+  border-radius: 10px;
+  border: 1.5px solid #EAEBED;
+  overflow: hidden;
+  max-width: 15.9375rem;
+  position: relative;
+}
+
+.model-bage {
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 141%;
+  color: #FFF;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.red-bage {
+  background-color: #EE685F;
+  padding: 4px 9px;
+}
+
+.green-bage {
+  background-color: #75D14A;
+  padding: 4px 8px;
+}
+
+.card-icon {
+  position: absolute;
+  top: 18px;
+  right: 17px;
+}
+
+.models-card-image {
+  background-color: #F0F1F5;
+  padding: 27px 10px 22px 3px;
+}
+
+.card-image {
+  width: 15.125rem;
+  height: 11.375rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 144%;
+  color: #282739;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.card-content {
+  padding: 1.25rem 1.5625rem;
+}
+
+.characteristics {
+  padding: 0;
+  list-style-type: none;
+  columns: 2;
+  margin: 0;
+}
+
+.characteristics-item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 114%;
+  color: #5D6C7B;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.price-old {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 141%;
+  color: #5D6C7B;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.price-new {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 145%;
+  color: #282739;
+}
+
+.card-footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.card-footer-icon {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1.3px solid #EAEBED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button {
+  width: 100%;
+  font-size: 0.75rem;
+  padding: 0.625rem 0 0.625rem 0;
+}
+
+
+.cta {
+  margin-top: 6.25rem;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  margin-bottom: 6.25rem;
+  background-color: #F4F7FB;
+  padding-top: 5.5rem;
+  padding-left: 8.4375rem;
+  padding-bottom: 4.875rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.section-title {
+}
+.cta-title {
+  max-width: 38.3125rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta-form {
+}
+.cta-form-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 143%;
+  color: #282739;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+.input-group-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.input {
+  padding: 15px 0 15px 25px;
+  border-radius: 5px;
+}
+.phone-input {
+  border: 1px solid #EAEBED;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 143%;
+  color: #5D6C7B;
+  min-width: 16.4375rem;
+}
+
+.cta-form-button {
+  padding: 15px 25px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 143%;
+}
+.cta-form-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cta-checkbox {
+  width: 1rem;
+  height: 1rem;
+  border-color: #F4F7FB;
+  border-radius: 2px;
+}
+
+.cta-checkbox:checked {
+  background-color: #FFF;
+  border-color: #F4F7FB;
+  color: #6F73EE;
+}
+.cta-form-footer-text {
+  margin: 0;
+  max-width: 19.1875rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 116%;
+  color: #282739;
+}
+
+.cta-form-footer-link {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 116%;
+  color: #282739;
+}
+
+.cta-image {
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+}
