@@ -514,15 +514,11 @@ body {
   position: relative;
 }
 
-.section-title {
-}
 .cta-title {
   max-width: 38.3125rem;
   margin-bottom: 2.5rem;
 }
 
-.cta-form {
-}
 .cta-form-text {
   font-weight: 500;
   font-size: 1rem;
@@ -594,4 +590,270 @@ body {
   position: absolute;
   bottom: 0;
   right: 180px;
+}
+
+.footer {
+  background-color: #F4F7FB;
+}
+.footer-header {
+  background-color: #6F73EE;
+}
+
+.footer-header-wrapper {
+  padding: 23px 165px 21px 165px;
+  display: flex;
+  align-items: center;
+  gap: 5.9375rem;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 144%;
+  color: #FFF;
+  max-width: 445px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-form {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-input {
+  flex-grow: 1;
+  color: #FFF;
+  background-color: #FFFFFF33;
+  border: none;
+}
+
+.footer-input::placeholder {
+  color: #FFF;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.footer-button {
+  padding-right: 1.5625rem;
+  padding-left: 1.5625rem;
+}
+
+.footer-top {
+  padding: 46px 165px 76px 165px;
+  display: flex;
+}
+
+.footer-menu-wrapper:nth-child(1) {
+  margin-right: 7.8125rem;
+}
+
+.footer-menu-wrapper:nth-child(2) {
+  margin-right: 6.875rem;
+}
+
+.footer-menu-wrapper:nth-child(3) {
+  margin-right: 4.1875rem;
+}
+
+.footer-menu-title {
+  margin-top: 0;
+  margin-bottom: 1.0625rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 144%;
+  color: #282739;
+}
+
+.footer-menu-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+ 
+}
+
+.footer-menu-item {
+  margin-bottom: 0.625rem;
+  
+}
+.footer-menu-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 143%;
+  color: #5D6C7B;
+}
+.footer-menu-column-2 {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+.footer-contacts-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-contacts-title {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 141%;
+  color: #282739;
+  margin-top: 0;
+  margin-bottom: 0.3125rem;
+}
+.footer-contacts-phone {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 143%;
+  color: #282739;
+  text-decoration: none;
+}
+.footer-contacts-schedule {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 141%;
+  color: #5D6C7B;
+  margin-top: 0.4375rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: #6F73EE;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 141%;
+}
+
+.footer-separator {
+  max-width: 69.375rem;
+  margin: auto;
+  height: 1px;
+  background-color: #5D6C7B;
+  opacity: 0.15;
+}
+
+.footer-bottom {
+  padding: 2.25rem 10.3125rem 2.125rem 10.3125rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 143%;
+  color: #282739;
+  margin: 0 3.6875rem 0 0;
+}
+
+.load-badges-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-right: 15.625rem;
+}
+
+.load-badge {
+}
+
+.social-badges-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.social-badge {
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8125rem;
+  min-width: 7.6875rem;
+  min-height: 2.8125rem;
+  border-radius: 5px;
+}
+
+.social-badge-content {
+}
+.social-badge-title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 142%;
+  color: #282739;
+  margin: 0;
+}
+
+.social-badge-subscribers {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 140%;
+  color: #5D6C7B;
+}
+
+.footer-wrapper {
+  padding: 1.125rem 10.3125rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+  margin-right: 23.9375rem;
+}
+
+.footer-legal-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 141%;
+  color: #5D6C7B;
+}
+
+.footer-payments-wrapper {
+  margin-right: 2.3125rem;
+}
+
+.footer-payments-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+.payment-badge-link {
+  min-width: 2.125rem;
+  min-height: 1.5rem;
+  border-radius: 3px;
+  border: 0.5px solid #EAEBED;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-chats-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-chats-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 142%;
+  color: #282739;
+  margin-right: 0.9375rem;
+}
+
+.footer-social-icon:not(:last-child) {
+  margin-right: 0.875rem;
 }
