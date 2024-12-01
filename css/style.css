@@ -52,19 +52,23 @@ body {
 .header-socials {
   display: flex;
   align-items: center;
-  gap: 0.5313rem;
+  gap: 0.5rem;
+}
+
+.header-socials-link {
+  padding-top: 0.25rem;
 }
 
 .header-phone {
   font-weight: 500;
   font-size: 0.75rem;
-  line-height: 141%;
+  line-height: 150%;
   color: #282739;
   text-decoration: none;
 }
 
 .header {
-  padding: 1.8125rem 10.3125rem 0 10.3125rem;
+  padding: 1.6875rem 10.3125rem 0 10.3125rem;
   display: flex;
   align-items: center;
 }
@@ -90,11 +94,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8125rem;
-  padding: 0.5rem 1.125rem 0.5625rem 0.9375rem;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 143%;
+  line-height: 144%;
   margin-right: 1.25rem;
+  height: 2.5rem;
+  padding-left: 0.9375rem;
+  padding-right: 1.125rem;
 }
 
 .header-button-lines {
@@ -102,7 +108,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 0.3125rem;
+  gap: 4px;
   padding-top: 0.4375rem;
   padding-bottom: 0.375rem;
 }
@@ -120,7 +126,7 @@ body {
 .header-controls {
   display: flex;
   border-radius: 5px;
-  border: 3px solid #6F73EE;
+  border: 1px solid #6F73EE;
   overflow: hidden;
   flex-grow: 1;
   margin-right: 2.9375rem;
@@ -200,9 +206,10 @@ body {
 .banner-address {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 141%;
+  line-height: 154%;
   margin-left: 0.5rem;
   margin-right: 0.625rem;
+  letter-spacing: 0.3px;
 }
 
 .banner-time {
@@ -214,7 +221,7 @@ body {
 .banner-title {
   font-weight: 600;
   font-size: 2.1875rem;
-  line-height: 142%;
+  line-height: 143%;
   text-transform: uppercase;
   max-width: 38.25rem;
   margin-top: 1.1875rem;
@@ -233,7 +240,7 @@ body {
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 2.1875rem;
+  gap: 2.4375rem;
   padding: 0;
   margin-bottom: 2.375rem;
 }
@@ -241,7 +248,8 @@ body {
 .banner-features-item {
   display: flex;
   align-items: center;
-  gap: 0.9375rem;
+  gap: 1.0625rem;
+  letter-spacing: 0.3px;
 }
 
 .banner-features-item-icon {
@@ -279,8 +287,6 @@ body {
   padding-right: 2.5rem;
 }
 
-.section {
-}
 .test-drive {
   margin-top: 4.5rem;
   margin-bottom: 6.25rem;
@@ -298,7 +304,7 @@ body {
   text-transform: uppercase;
   font-size: 2.1875rem;
   font-weight: 600;
-  line-height: 143%;
+  line-height: 147%;
   margin: 0;
 }
 
@@ -307,15 +313,13 @@ body {
   margin-bottom: 1.875rem;
 }
 
-.section-content {
-}
-
 .section-list-title {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 115%;
   margin-top: 0;
   margin-bottom: 1.125rem;
+  letter-spacing: 0.5px;
 }
 
 .section-list {
@@ -330,7 +334,7 @@ body {
   margin-bottom: 0.9375rem;
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 144%;
+  line-height: 123%;
 }
 
 .section-list-icon {
@@ -393,8 +397,8 @@ body {
   line-height: 141%;
   color: #FFF;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 9px;
+  left: 9px;
 }
 
 .red-bage {
@@ -415,7 +419,7 @@ body {
 
 .models-card-image {
   background-color: #F0F1F5;
-  padding: 27px 10px 22px 3px;
+  padding: 25px 10px 19px 2px;
 }
 
 .card-image {
@@ -433,13 +437,16 @@ body {
 }
 
 .card-content {
-  padding: 1.25rem 1.5625rem;
+  padding-top: 1.25rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.3125rem;
 }
 
 .characteristics {
   padding: 0;
   list-style-type: none;
   columns: 2;
+  column-gap: 0.5rem;
   margin: 0;
 }
 
@@ -459,6 +466,8 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
+  margin-top: 0.625rem;
+  padding-right: 1.4375rem;
 }
 
 .price-old {
@@ -474,7 +483,7 @@ body {
   margin: 0;
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 145%;
+  line-height: 128%;
   color: #282739;
 }
 
@@ -495,11 +504,10 @@ body {
 }
 
 .card-button {
-  width: 100%;
+  width: 206px;
   font-size: 0.75rem;
-  padding: 0.625rem 0 0.625rem 0;
+  padding: 14px 0 10px 0;
 }
-
 
 .cta {
   margin-top: 6.25rem;
@@ -509,20 +517,21 @@ body {
   background-color: #F4F7FB;
   padding-top: 5.5rem;
   padding-left: 8.4375rem;
-  padding-bottom: 4.875rem;
+  padding-bottom: 4.75rem;
   border-radius: 10px;
   position: relative;
 }
 
 .cta-title {
   max-width: 38.3125rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.9375rem;
+  line-height: 146%;
 }
 
 .cta-form-text {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 143%;
+  line-height: 144%;
   color: #282739;
   margin-top: 0;
   margin-bottom: 1.25rem;
@@ -530,7 +539,7 @@ body {
 .input-group-wrapper {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.375rem;
   margin-bottom: 1.25rem;
 }
 .input {
@@ -544,6 +553,7 @@ body {
   line-height: 143%;
   color: #5D6C7B;
   min-width: 16.4375rem;
+  padding-left: 1.6875rem;
 }
 
 .cta-form-button {
@@ -644,7 +654,7 @@ body {
 }
 
 .footer-top {
-  padding: 46px 165px 76px 165px;
+  padding: 46px 165px 63px 165px;
   display: flex;
 }
 
@@ -653,11 +663,11 @@ body {
 }
 
 .footer-menu-wrapper:nth-child(2) {
-  margin-right: 6.875rem;
+  margin-right: 6.3125rem;
 }
 
 .footer-menu-wrapper:nth-child(3) {
-  margin-right: 4.1875rem;
+  margin-right: 4.6875rem;
 }
 
 .footer-menu-title {
@@ -736,7 +746,7 @@ body {
 }
 
 .footer-bottom {
-  padding: 2.25rem 10.3125rem 2.125rem 10.3125rem;
+  padding: 2.25rem 10.3125rem 1.8125rem 10.3125rem;
   display: flex;
   align-items: center;
 }
@@ -758,9 +768,6 @@ body {
   margin-right: 15.625rem;
 }
 
-.load-badge {
-}
-
 .social-badges-wrapper {
   display: flex;
   align-items: center;
@@ -771,14 +778,15 @@ body {
   background-color: #FFF;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.8125rem;
   min-width: 7.6875rem;
   min-height: 2.8125rem;
   border-radius: 5px;
+  padding-left: 0.6875rem;
 }
 
 .social-badge-content {
+  margin-top: -7px;
 }
 .social-badge-title {
   font-weight: 500;
@@ -792,7 +800,7 @@ body {
   margin: 0;
   font-weight: 400;
   font-size: 0.625rem;
-  line-height: 140%;
+  line-height: 60%;
   color: #5D6C7B;
 }
 
