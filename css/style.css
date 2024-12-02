@@ -960,9 +960,11 @@ body {
   align-items: flex-start;
   padding-left: 1.0625rem;
 }
+
 .modal-checkbox {
   margin-right: 0.75rem;
 }
+
 .modal-form-footer-text {
   margin: 0;
   font-weight: 400;
