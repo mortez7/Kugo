@@ -865,3 +865,124 @@ body {
 .footer-social-icon:not(:last-child) {
   margin-right: 0.875rem;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(41, 45, 51, 0.5);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+.modal.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.is-open .modal-dialog {
+  transform: translateY(10%);
+  opacity: 1;
+}
+
+.modal-dialog {
+  background-color: #FFF;
+  position: relative;
+  max-width: 49.375rem;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform 0.3s, opacity 0.3s;
+  display: flex;
+  gap: 69px;
+  border-radius: 5px;
+  padding: 40px 57px 37px 40px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.5625rem;
+  line-height: 144%;
+  color: #282739;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.modal-title-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #282739;
+  margin-top: 0;
+  margin-bottom: 1.8125rem;
+}
+
+.modal-text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 142%;
+  color: #282739;
+  margin-top: 0;
+  margin-bottom: 5.375rem;
+}
+
+.modal-form-text {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 141%;
+  color: #5D6C7B;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.modal-button {
+  margin-top: 1.25rem;
+  min-width: 16.4375rem;
+  height: 3.3125rem;
+  margin-bottom: 1rem;
+}
+
+.modal-form-footer {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 1.0625rem;
+}
+.modal-checkbox {
+  margin-right: 0.75rem;
+}
+.modal-form-footer-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 116%;
+  color: #282739;
+  max-width: 12.5rem;
+}
+
+.modal-form-footer-link {
+  text-decoration: none;
+  color: #6F73EE;
+}
+
+.modal-image-wrapper {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.modal-image {
+  width: 21.0625rem;
+  height: 31.0625rem;
+}
