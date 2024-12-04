@@ -265,7 +265,7 @@ body {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 128%;
-  max-width: 143px;
+  max-width: 8.9375rem;
   margin: 0;
 }
 
@@ -397,29 +397,29 @@ body {
   line-height: 141%;
   color: #FFF;
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 0.5625rem;
+  left: 0.5625rem;
 }
 
 .red-bage {
   background-color: #EE685F;
-  padding: 4px 9px;
+  padding: 0.25rem 0.5625rem;
 }
 
 .green-bage {
   background-color: #75D14A;
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
 }
 
 .card-icon {
   position: absolute;
-  top: 18px;
-  right: 17px;
+  top: 1.125rem;
+  right: 1.0625rem;
 }
 
 .models-card-image {
   background-color: #F0F1F5;
-  padding: 25px 10px 19px 2px;
+  padding: 1.5625rem 0.625rem 1.1875rem 0.125rem;
 }
 
 .card-image {
@@ -504,9 +504,9 @@ body {
 }
 
 .card-button {
-  width: 206px;
+  width: 12.875rem;
   font-size: 0.75rem;
-  padding: 14px 0 10px 0;
+  padding: 0.875rem 0 10px 0;
 }
 
 .cta {
@@ -543,7 +543,7 @@ body {
   margin-bottom: 1.25rem;
 }
 .input {
-  padding: 15px 0 15px 25px;
+  padding: 0.9375rem 0 0.9375rem 1.5625rem;
   border-radius: 5px;
 }
 .phone-input {
@@ -599,7 +599,9 @@ body {
 .cta-image {
   position: absolute;
   bottom: 0;
-  right: 180px;
+  right: 11.25rem;
+  width: 25.625rem;
+  height: 31.5rem;
 }
 
 .footer {
@@ -610,7 +612,7 @@ body {
 }
 
 .footer-header-wrapper {
-  padding: 23px 165px 21px 165px;
+  padding: 1.4375rem 10.3125rem 1.3125rem 10.3125rem;
   display: flex;
   align-items: center;
   gap: 5.9375rem;
@@ -621,7 +623,7 @@ body {
   font-size: 1.125rem;
   line-height: 144%;
   color: #FFF;
-  max-width: 445px;
+  max-width: 27.8125rem;
   text-transform: uppercase;
   margin: 0;
 }
@@ -654,7 +656,7 @@ body {
 }
 
 .footer-top {
-  padding: 46px 165px 63px 165px;
+  padding: 2.875rem 10.3125rem 3.9375rem 10.3125rem;
   display: flex;
 }
 
@@ -988,3 +990,346 @@ body {
   width: 21.0625rem;
   height: 31.0625rem;
 }
+
+
+@media (max-width: 1438px) {
+
+  .cta-image {
+    right: 8.25rem;
+}
+
+.footer-menu-wrapper:nth-child(1) {
+  margin-right: 4.8125rem;
+}
+
+.footer-menu-wrapper:nth-child(2) {
+  margin-right: 3.3125rem;
+}
+
+.footer-menu-wrapper:nth-child(3) {
+  margin-right: 0.6875rem;
+}
+
+  .load-badges-wrapper {
+    margin-right: 6.625rem;
+  }
+
+  .footer-legal {
+    margin-right: 15.9375rem;
+  }
+}
+
+
+@media (max-width: 1374px) {
+  .test-drive {
+    gap: 3.3125rem;
+  }
+
+  .card-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+  
+.card-button {
+  width: 100%;
+}
+}
+
+@media (max-width: 1320px) {
+  .test-drive {
+    padding-left: 8.3125rem;
+  }
+
+ .card-footer {
+  padding-right: 0.4375rem;
+ }
+
+ .footer-legal {
+  margin-right: 13.9375rem;
+ }
+}
+
+@media (max-width: 1278px) {
+  html {
+    font-size: 14px;
+  }
+
+  .footer-header-wrapper {
+    gap: 1.9375rem;
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .header-logo {
+    margin-right: 1.1875rem;
+  }
+
+  .header-button {
+    margin-right: 1rem;
+  }
+
+  .banner-content {
+    padding: 2.5rem 7.5rem;
+  }
+
+  .header-controls {
+    margin-right: 1rem;
+  }
+
+  .header-links {
+    gap: 0.9rem;
+  }
+
+  .education {
+    gap: 2.9375rem;
+  }
+
+  .test-drive {
+    gap: 2.3125rem;
+    padding-left: 8.3125rem;
+  }
+
+  .models-wrapper {
+    padding-left: 8.375rem;
+    padding-right: 8.375rem;
+  }
+
+  .card-image {
+    width: 13.125rem;
+    height: 10.375rem;
+  }
+
+  .characteristics-item {
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-image {
+    right: 3.25rem;
+  }
+
+  .card-footer-icons {
+    gap: 0.2rem;
+  }
+
+  .card-content {
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-top {
+    padding: 1.875rem 8.3125rem 1.9375rem 8.3125rem;
+    display: flex;
+  }
+
+  .footer-bottom {
+    padding: 1.25rem 8.3125rem 0.8125rem 8.3125rem;
+  }
+
+  .footer-wrapper {
+    padding: 1.125rem 8.3125rem;
+  }
+}
+
+@media (max-width: 1096px) {
+  .section-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1056px) {
+  .section-list-item {
+    align-items: normal;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 6.3125rem;
+  }
+
+  .header {
+    padding: 1.3rem 6.3125rem 0 6.3125rem;
+  }
+
+  .banner {
+    margin-top: 1.5rem;
+  }
+
+  .banner-image {
+    background: none;
+  }
+
+  .banner-content {
+    padding: 2rem 2.5rem;
+    background: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 100%);
+  }
+
+  .banner-text {
+    margin-bottom: 1rem;
+  }
+
+  .banner-features {
+    margin-bottom: 1rem;
+  }
+
+  .test-drive {
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 0.3125rem;
+    padding-left: 6.3125rem;;
+  }
+
+  .test-drive-title {
+    margin-bottom: 1rem;
+    max-width: 48.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 4.3125rem; 
+  }
+
+  .header-nav {
+    gap: 0.7rem;
+  }
+
+  .header {
+    padding: 1.3rem 4.3125rem 0 4.3125rem;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .banner-title {
+    font-size: 1.8rem;
+  }
+
+  .banner-text {
+    margin-bottom: 1rem;
+  }
+
+  .banner-features {
+    margin-bottom: 1.5rem;
+  }
+  
+  .test-drive {
+    padding-left: 4.3125rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0 1.3125rem;
+  }
+
+  .header {
+    padding: 1rem 1.3125rem 0 1.3125rem;
+  }
+
+  .header-button {
+    margin-right: 0.3rem;
+    font-size: 0;
+    gap: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.8rem;
+    height: 2.2rem;
+  }
+
+  .button-search {
+    padding: 0.55rem;
+  }
+
+  .header-button-line {
+    width: 1rem;
+  }
+
+  .header-button-line:nth-child(3) {
+    width: 0.7rem;
+}
+
+  .header-controls {
+    margin-right: 0.5rem;
+    height: 2.2rem;
+  }
+
+  .header-input {
+    padding-left: 0.5rem;
+  }
+
+  .header-links {
+    gap: 0.4rem;
+  }
+
+  .header-link {
+    font-size: 0;
+  }
+
+  .banner {
+    padding: 0 1rem;
+  }
+
+  .banner-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .banner-features {
+    gap: 0.6rem;
+  }
+
+  .banner-features-item {
+    gap: 0.1625rem;
+  }
+
+  .banner-button {
+    width: 100%;
+  }
+
+  .test-drive {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+  }
+
+  .test-drive-image {
+    width: 100%;
+    height: 30.375rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-list-item {
+    margin-bottom: 0.7rem;
+  }
+  
+  .section-list-item {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+} 
+
+@media (max-width: 466px) {
+  .test-drive-image {
+    height: 23.375rem;
+  }
+}
+
+@media (max-width: 439px) {
+  .header-phone {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 406px) {
+  .banner-features {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
