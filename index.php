@@ -469,14 +469,18 @@
 
     <section class="section section cta">
       <h2 class="section-title cta-title">Нет нужной модели, которую хотите протестировать?</h2>
-      <form action="#" class="cta-form">
+      <form action="handler.php" method="POST" class="cta-form phone-form">
         <p class="cta-form-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
         <div class="input-group-wrapper">
-          <input type="tel" class="input phone-input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _">
-          <button class="button cta-form-button">Оставить заявку на тест-драйв</button>
+          <div class="input-group phone-input-group">
+          <input type="tel" class="input phone-input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" name="userphone" required maxlength="30">
+          </div>
+          <button type="submit" class="button cta-form-button">Оставить заявку на тест-драйв</button>
         </div>
           <div class="cta-form-footer">
-            <input type="checkbox" class="cta-checkbox">
+            <div class="input-group checkbox-group">
+            <input type="checkbox" class="cta-checkbox" name="checkbox" required>
+            </div>
             <p class="cta-form-footer-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="cta-form-footer-link">политикой конфиденциальности</a></p>
           </div>
         
@@ -490,9 +494,11 @@
       <div class="container">
         <div class="footer-header-wrapper">
           <h3 class="footer-title">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h3>
-          <form action="#" class="footer-form">
-            <input type="text" class="input footer-input" placeholder="Введите Ваш email">
-            <button class="button-light footer-button">Подписаться</button>
+          <form action="handler.php" method="POST" class="footer-form email-form">
+            <div class="input-group footer-input-group">
+            <input type="text" class="input footer-input" placeholder="Введите Ваш email" name="usermail" required>
+            </div>
+            <button type="submit" class="button-light footer-button">Подписаться</button>
           </form>
         </div>
       </div>
@@ -708,12 +714,16 @@
       <p class="modal-title-text">и подберите модель для себя</p>
       <p class="modal-text">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
 
-      <form action="#" class="modal-form">
+      <form action="handler.php" class="modal-form phone-form" method="POST">
         <p class="modal-form-text">Как с вами удобнее связаться?</p>
-        <input type="tel" class="input phone-input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _">
-        <button class="button modal-button">Оформить предзаказ</button>
+        <div class="input-group phone-input-group">
+        <input type="tel" class="input phone-input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" name="userphone" required maxlength="30">
+        </div>
+        <button type="submit" class="button modal-button">Оформить предзаказ</button>
         <div class="modal-form-footer">
-          <input type="checkbox" class="modal-checkbox">
+          <div class="input-group checkbox-group">
+          <input type="checkbox" class="modal-checkbox" name="checkbox" required>
+          </div>
           <p class="modal-form-footer-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="modal-form-footer-link">политикой конфиденциальности</a></p>
         </div>
       </form>
@@ -724,11 +734,7 @@
   </div>
 </div> 
 
-
-
-
-
-
+  <script src="js/just-validate.production.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

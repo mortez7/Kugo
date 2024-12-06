@@ -92,3 +92,84 @@ document.addEventListener("input", (e) => {
     input.value = result;
   }
 });
+
+const phoneForms = document.querySelectorAll(".phone-form");
+
+const emailForms = document.querySelectorAll(".email-form");
+
+phoneForms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+
+  validation
+  .addField("[name=userphone]", [
+  {
+    rule: "required",
+    errorMessage: "Укажите телефон",
+  },
+  ])
+  .addField("[name=checkbox]", [
+    {
+      rule: "required",
+      errorMessage: "Установите флажок",
+    },
+  ])
+  .onSuccess((event) => {
+    const thisForm = event.target;
+    const formData = new FormData(thisForm);
+
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+          thisForm.reset();
+        } else {
+          alert(response.statusText);
+        }
+      });
+    };
+
+    ajaxSend(formData);
+  });
+});
+
+emailForms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+
+  validation
+  .addField("[name=usermail]", [
+  {
+    rule: "required",
+    errorMessage: "Укажите почту",
+  },
+  {
+    rule: "email",
+    errorMessage: "Введите корректный формат почты",
+  }
+  ])
+
+  .onSuccess((event) => {
+    const thisForm = event.target;
+    const formData = new FormData(thisForm);
+
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+          thisForm.reset();
+        } else {
+          alert(response.statusText);
+        }
+      });
+    };
+
+    ajaxSend(formData);
+  });
+});
