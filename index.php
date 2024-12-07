@@ -173,11 +173,22 @@
             </ul>
         </div>
       </div>
-      <img src="./img/scooters.jpg" alt="scooters" class="test-drive-image">
+
+      <picture>
+        <source type="image/webp" srcset="./img/scooters.webp">
+        <source type="image/jpg" srcset="./img/scooters.jpg">
+        <img src="./img/scooters.jpg" alt="scooters" class="test-drive-image">
+      </picture>
+      
     </section>
 
     <section class="section education">
-      <img src="./img/e-scooters.jpg" alt="e-scooters" class="education-image">
+
+      <picture>
+        <source type="image/webp" srcset="./img/e-scooters.webp">
+        <source type="image/jpg" srcset="./img/e-scooters.jpg">
+        <img src="./img/e-scooters.jpg" alt="e-scooters" class="education-image">
+      </picture>
       <div class="section-wrapper">
         <h2 class="section-title education-title">Научим правильной и&nbsp;безопасной езде в городе вас&nbsp;или вашего ребенка</h2>
           <div class="section-content">
@@ -229,7 +240,11 @@
           <span class="model-bage red-bage">ХИТ</span>
           <img src="./img/balance.svg" alt="balance" class="card-icon">
           <div class="models-card-image">
+          <picture>
+            <source type="image/webp" srcset="./img/scooter.webp">
+            <source type="image/png" srcset="./img/scooter.png">
             <img src="./img/scooter.png" alt="scooter" class="card-image">
+          </picture>
           </div>
           <div class="card-content">
           <h3 class="card-title">Kugoo Kirin M4</h3>
@@ -289,7 +304,11 @@
           <span class="model-bage green-bage">Новинка</span>
           <img src="./img/balance.svg" alt="balance" class="card-icon">
           <div class="models-card-image">
-            <img src="./img/scooter.png" alt="scooter" class="card-image">
+            <picture>
+              <source type="image/webp" srcset="./img/scooter.webp">
+              <source type="image/png" srcset="./img/scooter.png">
+              <img src="./img/scooter.png" alt="scooter" class="card-image">
+            </picture>
           </div>
           <div class="card-content">
           <h3 class="card-title">Kugoo Kirin M4</h3>
@@ -349,7 +368,11 @@
           <span class="model-bage red-bage">ХИТ</span>
           <img src="./img/balance.svg" alt="balance" class="card-icon">
           <div class="models-card-image">
-            <img src="./img/scooter.png" alt="scooter" class="card-image">
+            <picture>
+              <source type="image/webp" srcset="./img/scooter.webp">
+              <source type="image/png" srcset="./img/scooter.png">
+              <img src="./img/scooter.png" alt="scooter" class="card-image">
+            </picture>
           </div>
           <div class="card-content">
           <h3 class="card-title">Kugoo Kirin M4</h3>
@@ -409,7 +432,11 @@
           <span class="model-bage green-bage">Новинка</span>
           <img src="./img/balance.svg" alt="balance" class="card-icon">
           <div class="models-card-image">
-            <img src="./img/scooter.png" alt="scooter" class="card-image">
+            <picture>
+              <source type="image/webp" srcset="./img/scooter.webp">
+              <source type="image/png" srcset="./img/scooter.png">
+              <img src="./img/scooter.png" alt="scooter" class="card-image">
+            </picture>
           </div>
           <div class="card-content">
           <h3 class="card-title">Kugoo Kirin M4</h3>
@@ -485,7 +512,11 @@
           </div>
         
       </form>
-      <img src="./img/young-woman-smiling.png" alt="young-woman-smiling" class="cta-image">
+      <picture>
+        <source type="image/webp" srcset="./img/young-woman-smiling.webp">
+        <source type="image/png" srcset="./img/young-woman-smiling.png" >
+        <img src="./img/young-woman-smiling.png" alt="young-woman-smiling" class="cta-image">
+      </picture>
     </section>
   </div>
 
@@ -580,10 +611,18 @@
         <a href="./" class="footer-logo">Kugoo</a>
         <div class="load-badges-wrapper">
           <a href="#" class="load-badge">
-            <img src="./img/google-play-badge.png" alt="google-play-badge">
+            <picture>
+              <source type="image/webp" srcset="./img/google-play-badge.webp">
+              <source type="image/png" srcset="./img/google-play-badge.png" >
+              <img src="./img/google-play-badge.png" alt="google-play-badge">
+            </picture>
           </a>
           <a href="#" class="load-badge">
-            <img src="./img/app-store-badge.png" alt="app-store-badge">
+            <picture>
+              <source type="image/webp" srcset="./img/app-store-badge.webp">
+              <source type="image/png" srcset="./img/app-store-badge.png" >
+              <img src="./img/app-store-badge.png" alt="app-store-badge">
+            </picture>
           </a>
         </div>
           <div class="social-badges-wrapper">
@@ -739,7 +778,11 @@
       </form>
     </div>
     <div class="modal-image-wrapper">
-      <img src="./img/modal-img.jpg" alt="modal-image" class="modal-image">
+      <picture>
+        <source type="image/webp" srcset="./img/modal-img.webp">
+        <source type="image/jpg" srcset="./img/modal-img.jpg" >
+        <img src="./img/modal-img.jpg" alt="modal-image" class="modal-image">
+      </picture>
     </div>
   </div>
 </div> 

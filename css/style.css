@@ -1625,6 +1625,11 @@ body {
     padding-right: 1.4375rem;
   }
 
+  .footer-header-wrapper {
+    padding-left: 1.4375rem;
+    padding-right: 1.4375rem;
+  }
+
   .footer-top {
     padding-left: 1.4375rem;
     padding-right: 1.4375rem;
