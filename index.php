@@ -478,7 +478,7 @@
           <button type="submit" class="button cta-form-button">Оставить заявку на тест-драйв</button>
         </div>
           <div class="cta-form-footer">
-            <div class="input-group checkbox-group">
+            <div class="input-group checkbox-group cta-checkbox-group">
             <input type="checkbox" class="cta-checkbox" name="checkbox" required>
             </div>
             <p class="cta-form-footer-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="cta-form-footer-link">политикой конфиденциальности</a></p>
@@ -716,8 +716,8 @@
 
       <form action="handler.php" class="modal-form phone-form" method="POST">
         <p class="modal-form-text">Как с вами удобнее связаться?</p>
-        <div class="input-group phone-input-group">
-        <input type="tel" class="input phone-input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" name="userphone" required maxlength="30">
+        <div class="input-group phone-input-group modal-phone-input-group">
+        <input type="tel" class="input phone-input modal-phone-input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" name="userphone" required maxlength="30">
         </div>
         <button type="submit" class="button modal-button">Оформить предзаказ</button>
         <div class="modal-form-footer">

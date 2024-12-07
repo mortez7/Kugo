@@ -901,9 +901,9 @@ body {
   transform: translateY(-10%);
   transition: transform 0.3s, opacity 0.3s;
   display: flex;
-  gap: 69px;
+  gap: 4.3125rem;
   border-radius: 5px;
-  padding: 40px 57px 37px 40px;
+  padding: 2.5rem 3.5625rem 2.3125rem 2.5rem;
 }
 
 .modal-close {
@@ -920,7 +920,7 @@ body {
   color: #282739;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 0.5625rem;
 }
 
 .modal-title-text {
@@ -964,7 +964,7 @@ body {
 }
 
 .modal-checkbox {
-  margin-right: 0.75rem;
+  margin-right: 0.9375rem;
 }
 
 .modal-form-footer-text {
@@ -974,6 +974,10 @@ body {
   line-height: 116%;
   color: #282739;
   max-width: 12.5rem;
+}
+
+.modal-phone-input {
+  line-height: 135%;
 }
 
 .modal-form-footer-link {
@@ -1016,7 +1020,14 @@ body {
 }
 
 .checkbox-group .just-validate-error-label {
-  top: 40px;
+  top: 30px;
+  left: -40px;
+  text-align: center;
+}
+
+.cta-checkbox-group .just-validate-error-label {
+  top: 35px;
+  left: -27px;
 }
 
 .footer-input-group .just-validate-error-label {
@@ -1084,6 +1095,10 @@ body {
 @media (max-width: 1278px) {
   html {
     font-size: 14px;
+  }
+
+  .modal-phone-input-group .just-validate-error-label {
+    top: 54px;
   }
 
   .footer-header-wrapper {
@@ -1418,6 +1433,23 @@ body {
     align-items: flex-start;
     gap: 10px
   }
+
+  .modal-dialog {
+    padding: 1.5rem 2.5625rem 1.3125rem 1.5rem;
+    gap: 2.3125rem;
+  }
+
+  .modal-close {
+    top: 5px;
+  }
+
+  .modal-title-text {
+    margin-bottom: 0.7rem;
+  }
+
+  .modal-text {
+    margin-bottom: 2.3rem;
+  }
 }
 
 @media (max-width: 613px) {
@@ -1597,6 +1629,22 @@ body {
   .footer-wrapper {
     padding-left: 1.4375rem;
     padding-right: 1.4375rem;
+  }
+
+  .modal-dialog {
+    padding: 2.5rem 3.5625rem 2.3125rem 2.5rem;
+  }
+
+  .modal-image-wrapper {
+    display: none;
+  }
+
+  .modal-button {
+    width: 100%;
+  }
+
+  .modal-form-footer-text {
+    max-width: 100%;
   }
 } 
 
