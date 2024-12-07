@@ -80,6 +80,7 @@ body {
   color: #282739;
   text-transform: uppercase;
   margin-right: 2.1875rem;
+  text-decoration: none;
 }
 
 .button {
@@ -501,6 +502,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .card-button {
@@ -785,6 +787,7 @@ body {
   min-height: 2.8125rem;
   border-radius: 5px;
   padding-left: 0.6875rem;
+  text-decoration: none;
 }
 
 .social-badge-content {
@@ -1034,6 +1037,11 @@ body {
   top: 7px;
 }
 
+.footer-social-link {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
 
 @media (max-width: 1438px) {
 
@@ -1057,9 +1065,15 @@ body {
     margin-right: 6.625rem;
   }
 
+  .load-badge {
+    text-decoration: none;
+  }
+
   .footer-legal {
     margin-right: 15.9375rem;
   }
+
+  
 }
 
 
@@ -1313,10 +1327,6 @@ body {
   .footer-chats-text {
     margin-right: 0.1rem;
   }
-
-  .footer-social-icon:not(:last-child) {
-    margin-right: 0.5rem;
-}
 }
 
 @media (max-width: 768px) {

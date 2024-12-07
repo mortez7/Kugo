@@ -52,7 +52,7 @@
 
   <div class="container">
     <header class="header">
-      <div class="header-logo">Kugoo</div>
+      <a href="./" class="header-logo">Kugoo</a>
 
       <button class="button header-button">
         <div class="header-button-lines">
@@ -579,15 +579,15 @@
       <div class="footer-bottom">
         <a href="./" class="footer-logo">Kugoo</a>
         <div class="load-badges-wrapper">
-          <div class="load-badge">
+          <a href="#" class="load-badge">
             <img src="./img/google-play-badge.png" alt="google-play-badge">
-          </div>
-          <div class="load-badge">
+          </a>
+          <a href="#" class="load-badge">
             <img src="./img/app-store-badge.png" alt="app-store-badge">
-          </div>
+          </a>
         </div>
           <div class="social-badges-wrapper">
-            <div class="social-badge">
+            <a href="#" class="social-badge">
               <svg height="20px" width="20px">
                 <use href="./img/sprite.svg#vk"></use>
               </svg>
@@ -595,9 +595,9 @@
                 <h4 class="social-badge-title">Вконтакте</h4>
                 <p class="social-badge-subscribers">3300</p>
               </div>
-            </div>
+            </a>
 
-            <div class="social-badge">
+            <a href="#" class="social-badge">
               <svg height="20px" width="20px">
                 <use href="./img/sprite.svg#youtube"></use>
               </svg>
@@ -605,9 +605,9 @@
                 <h4 class="social-badge-title">YouTube</h4>
                 <p class="social-badge-subscribers">3603</p>
               </div>
-            </div>
+            </a>
 
-            <div class="social-badge">
+            <a href="#" class="social-badge">
               <svg height="20px" width="20px" fill="#039BE5">
                 <use href="./img/sprite.svg#telegram"></use>
               </svg>
@@ -615,7 +615,7 @@
                 <h4 class="social-badge-title">Telegram</h4>
                 <p class="social-badge-subscribers">432</p>
               </div>
-            </div>
+            </a>
           
         </div>
       </div>
@@ -690,15 +690,25 @@
 
         <div class="footer-chats-wrapper">
           <p class="footer-chats-text">Online чат:</p>
+
+          <a href="#" class="footer-social-link">
           <svg height="16px" width="16px" class="footer-social-icon">
             <use href="./img/sprite.svg#viber"></use>
           </svg>
+          </a>         
+
+          <a href="#" class="footer-social-link">
           <svg height="16px" width="16px" class="footer-social-icon">
             <use href="./img/sprite.svg#whatsapp"></use>
           </svg>
+          </a>
+
+          <a href="#" class="footer-social-link">
           <svg height="16px" width="16px" fill="#5D6C7B" class="footer-social-icon">
             <use href="./img/sprite.svg#telegram"></use>
           </svg>
+          </a>
+          
         </div>
       </div>
     </div>
