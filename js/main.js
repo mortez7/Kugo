@@ -215,3 +215,22 @@ emailForms.forEach((form) => {
     ajaxSend(formData);
   });
 });
+
+const alertModalButton = document.querySelector(".alert-modal-button");
+
+alertModalButton.addEventListener("click", () => {
+  window.location.href = "./index.php";
+})
+
+const headerButton = document.querySelector(".header-button");
+const dropdown = document.querySelector(".dropdown-menu");
+
+headerButton.addEventListener("click", () => {
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+});
+
+window.addEventListener("click", (event) => {
+  if(!event.target.matches(".header-button") && !event.target.matches(".dropdown-menu-item a")) {
+    dropdown.style.display = "none";
+  }
+});

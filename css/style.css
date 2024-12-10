@@ -103,6 +103,39 @@ body {
   padding-left: 0.9375rem;
   padding-right: 1.125rem;
   text-decoration: none;
+  
+}
+
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  display: none;
+  transition: all 0.5s;
+}
+
+.dropdown-menu-item {
+  margin-top: 5px;
+}
+
+.dropdown-menu-link {
+  text-decoration: none;
+  color: #282739;
+  transition: color 0.2s;
+}
+
+.dropdown-menu-link:hover {
+  color: #6F73EE;
 }
 
 .lines {
@@ -908,6 +941,11 @@ body {
   gap: 4.3125rem;
   border-radius: 5px;
   padding: 2.5rem 3.5625rem 2.3125rem 2.5rem;
+}
+
+#alert-modal .modal-dialog {
+  justify-content: center;
+  max-width: 24.375rem;
 }
 
 .modal-close {

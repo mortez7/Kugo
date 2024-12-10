@@ -56,6 +56,9 @@
     <header class="header">
       <a href="./" class="header-logo">Kugoo</a>
 
+      
+
+      <div class="dropdown">
       <a href="#" class="button header-button">
         <div class="lines">
           <div class="line"></div>
@@ -64,6 +67,14 @@
         </div>
         Каталог
       </a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Kugoo Kirin M4</a></li>
+          <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Kugoo Kirin M4</a></li>
+          <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Kugoo Kirin M4</a></li>
+          <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Kugoo Kirin M4</a></li>
+          <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Kugoo Kirin M4</a></li>
+        </ul>
+      </div>
 
       <div class="header-controls">
         <input type="text" class="header-input" placeholder="Искать самокат KUGO">
