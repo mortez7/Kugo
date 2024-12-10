@@ -23,7 +23,7 @@
           <a href="#" class="header-nav-link">Сотрудничество</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Заказать звонок</a>
+          <a href="#" class="header-nav-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
         </li>
         <li class="header-nav-item">
           <div class="header-socials">
@@ -133,7 +133,7 @@
             </li>
           </ul>
 
-          <button class="button-light banner-button" data-toggle="modal">Записаться</button>
+          <button class="button-light banner-button" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
         </div>
       </div>
     </section>
@@ -298,7 +298,7 @@
               </div>
             </div>
           </div>
-          <button class="button card-button" data-toggle="modal">Записаться на тест-драйв</button>
+          <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
         </div>
         </div>
 
@@ -362,7 +362,7 @@
               </div>
             </div>
           </div>
-          <button class="button card-button" data-toggle="modal">Записаться на тест-драйв</button>
+          <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
         </div>
         </div>
 
@@ -426,7 +426,7 @@
               </div>
             </div>
           </div>
-          <button class="button card-button" data-toggle="modal">Записаться на тест-драйв</button>
+          <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
         </div>
         </div>
 
@@ -490,7 +490,7 @@
               </div>
             </div>
           </div>
-          <button class="button card-button" data-toggle="modal">Записаться на тест-драйв</button>
+          <button class="button card-button" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
         </div>
         </div>
       </div>
@@ -603,7 +603,7 @@
         </div>
 
         <div class="footer-menu-wrapper">
-          <a href="#" class="footer-link">Заказать звонок</a>
+          <a href="#" class="footer-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
         </div>
       </div>
 
@@ -755,11 +755,13 @@
     </div>
   </footer>
   
- <div class="modal">
+ <div class="modal" id="feedback-modal">
   <div class="modal-dialog">
-    <svg width="25" height="25" class="modal-close">
-      <use href="./img/sprite.svg#close"></use>
-    </svg>
+  <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+      <svg width="25" height="25">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </a>
     <div class="modal-content">
       <h2 class="modal-title">Запишитесь на&nbsp;тест-драйв электросамоката</h2>
       <p class="modal-title-text">и подберите модель для себя</p>
@@ -788,6 +790,21 @@
     </div>
   </div>
 </div> 
+
+<div class="modal" id="alert-modal">
+  <div class="modal-dialog">
+    <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+      <svg width="25" height="25">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </a>
+      
+    <div class="modal-content">
+      <h2 class="modal-title">Cпасибо за заявку!</h2>
+      <button class="button modal-button alert-modal-button">На главную</button>
+    </div>
+  </div>
+</div>
 
   <script src="js/just-validate.production.min.js"></script>
   <script src="./js/main.js"></script>

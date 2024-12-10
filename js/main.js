@@ -1,28 +1,3 @@
-const modalButtons = document.querySelectorAll("[data-toggle=modal]");
-
-const modal = document.querySelector(".modal");
-
-const modalDialog = document.querySelector(".modal-dialog");
-
-const modalClose = document.querySelector(".modal-close");
-
-modalButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    modal.classList.add("is-open");
-  });
-});
-
-modalClose.addEventListener("click", (event) => {
-  modal.classList.remove("is-open");
-});
-
-modal.addEventListener("click", (event) => {
-  if(!event.composedPath().includes(modalDialog)) {
-    modal.classList.remove("is-open");
-  }
-});
-
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
   /* если вводят семерку, добавляем ей скобку */
@@ -93,6 +68,36 @@ document.addEventListener("input", (e) => {
   }
 });
 
+let currentModal;
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
+let feedbackModal = document.querySelector("#feedback-modal");
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    currentModal = document.querySelector(button.dataset.target);
+    currentModal.classList.toggle("is-open");
+
+    modalDialog = currentModal.querySelector(".modal-dialog");
+
+    currentModal.addEventListener("click", (event) => {
+      if (!event.composedPath().includes(modalDialog)) {
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
+});
+
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
+  }
+});
+
+
 const phoneForms = document.querySelectorAll(".phone-form");
 
 const emailForms = document.querySelectorAll(".email-form");
@@ -126,6 +131,23 @@ phoneForms.forEach((form) => {
       }).then((response) => {
         if (response.ok) {
           thisForm.reset();
+          
+          if(currentModal == undefined) {
+            currentModal = feedbackModal;
+          }
+          console.log(currentModal);
+          
+          currentModal.classList.remove("is-open");
+          alertModal.classList.add("is-open");
+
+          currentModal = alertModal;
+          modalDialog = currentModal.querySelector(".modal-dialog");
+
+          currentModal.addEventListener("click", (event) => {
+            if (!event.composedPath().includes(modalDialog)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
           alert(response.statusText);
         }
@@ -164,6 +186,26 @@ emailForms.forEach((form) => {
       }).then((response) => {
         if (response.ok) {
           thisForm.reset();
+          if(currentModal == undefined) {
+            currentModal = feedbackModal;
+          }
+          alertModal.classList.add("is-open");
+          
+          currentModal = alertModal;
+          modalDialog = currentModal.querySelector(".modal-dialog");
+
+          console.log(currentModal);
+
+          modalClose.addEventListener("click", (event) => {
+            currentModal.classList.remove("is-open");
+          });
+
+          currentModal.addEventListener("click", (event) => {
+            console.log(event.target);
+            if (!event.composedPath().includes(modalDialog)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
           alert(response.statusText);
         }
